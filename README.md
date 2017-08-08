@@ -125,3 +125,8 @@ A: Our build system requires Java 7 or later. If you see this error, install Jav
 	 You will also need to specify the new JDK version in Android Studio. Refer to this Stack Overflow entry for help doing so:
 
 	 http://stackoverflow.com/questions/30631286/how-to-specify-the-jdk-version-in-android-studio
+
+Q: After I upgraded to Android Studio v2.3, I've been facing alot of issues while compiling/building the project. How do I fix this?
+
+A: We recently upgraded our project to support Android Studio v2.3.x and below. After the upgradation changes done in [PR #938](https://github.com/edx/edx-app-android/pull/938), we too faced some issues.
+The fixes for the common issues can be seen in the [Issues section](https://github.com/edx/edx-app-android/issues) of this GitHub project. The most common and helpful issue with the fixes is [Issue #976](https://github.com/edx/edx-app-android/issues/976).
