@@ -64,27 +64,46 @@
                 android:orientation="horizontal"
                 android:gravity="center">
 
+                <org.edx.mobile.view.custom.IconImageViewXml
+                    android:id="@+id/row_subtitle_icon"
+                    android:layout_width="@dimen/fa_large"
+                    android:layout_height="@dimen/fa_large"
+                    android:baselineAlignBottom="true"
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    app:iconName="fa-edit" />
+
                 <TextView
                     android:id="@+id/row_subtitle"
+                    style="@style/bold_text"
+                    android:textColor="@color/edx_brand_gray_dark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textDirection="locale"
+                    android:textSize="@dimen/edx_small"
+                    android:layout_marginLeft="@dimen/widget_margin_half"
+                    android:layout_marginStart="@dimen/widget_margin_half"
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    tools:text="Subtitle" />
+
+                <TextView
+                    android:id="@+id/row_subtitle_due_date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ellipsize="end"
                     android:singleLine="true"
                     android:textColor="@color/edx_brand_gray_accent"
                     android:textDirection="locale"
-                    android:textSize="14sp"
+                    android:textSize="@dimen/edx_small"
+                    android:layout_marginLeft="@dimen/widget_margin_half"
+                    android:layout_marginStart="@dimen/widget_margin_half"
                     android:visibility="gone"
-                    tools:text="Subtitle" />
+                    tools:visibility="visible"
+                    tools:text="due today at 17:00 PKT" />
 
-                <org.edx.mobile.view.custom.IconImageViewXml
-                    android:id="@+id/row_subtitle_icon"
-                    android:layout_width="@dimen/fa_large"
-                    android:layout_height="@dimen/fa_large"
-                    android:baselineAlignBottom="true"
-                    android:layout_marginLeft="@dimen/x_small_icon_margin"
-                    android:layout_marginStart="@dimen/x_small_icon_margin"
-                    android:visibility="gone"
-                    app:iconName="fa-edit" />
             </LinearLayout>
 
         </LinearLayout>
